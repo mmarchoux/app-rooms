@@ -39,7 +39,7 @@ public abstract class RoomContextHttpManager extends Context {
                             float noiseLevel = Integer.parseInt(response.getJSONObject("noise").get("level").toString());
                             String noiseStatus = response.getJSONObject("noise").get("status").toString();
 
-                            state = new RoomContextState(id, lightStatus, noiseStatus, lightLevel, noiseLevel);
+                            //state = new RoomContextState(id, lightStatus, noiseStatus, lightLevel, noiseLevel);
                             // notify main activity for update...
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -57,7 +57,7 @@ public abstract class RoomContextHttpManager extends Context {
         onUpdate(state);
     }
 
-    private void onUpdate(RoomContextState context) {
+    private void onUpdate(RoomContextState state) {
     }
 
 

@@ -10,9 +10,9 @@ public class RoomContextState {
     private String statusLight;
     private String statusNoise;
     private int levelLight;
-    private float levelNoise;
+    private int levelNoise;
 
-    public RoomContextState(String room, String statusLight, String statusNoise, int levelLight, float levelNoise) {
+    public RoomContextState(String room, String statusLight, String statusNoise, int levelLight, int levelNoise) {
         super();
         this.room = room;
         this.statusLight = statusLight;
@@ -37,7 +37,7 @@ public class RoomContextState {
         return this.levelLight;
     }
 
-    public float getLevelNoise() {
+    public int getLevelNoise() {
         return this.levelNoise;
     }
 }
