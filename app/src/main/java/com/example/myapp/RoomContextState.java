@@ -21,6 +21,7 @@ public class RoomContextState {
         this.levelNoise = levelNoise;
     }
 
+    //get methods
     public String getRoom() {
         return this.room;
     }
@@ -40,4 +41,26 @@ public class RoomContextState {
     public int getLevelNoise() {
         return this.levelNoise;
     }
+
+    //set methods
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public void setStatusLight(String statusL) {
+        this.statusLight = statusL;
+    }
+
+    public void setStatusNoise(String statusN) {
+        this.statusNoise = statusN;
+    }
+
+    public void setLevelLight(int levelL) {
+        this.levelLight = levelL;
+    }
+
+    public void setLevelNoise(int levelN) {
+        this.levelNoise = levelN;
+    }
+
 }

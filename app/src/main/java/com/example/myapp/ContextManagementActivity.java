@@ -35,7 +35,7 @@ public class ContextManagementActivity extends AppCompatActivity {
     }
 
 
-    protected void onUpdate(RoomContextState state) {
+    protected void onUpdate(RoomContextState context) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_context_management);
 
